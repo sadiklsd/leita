@@ -1,0 +1,17 @@
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+        <form onSubmit="submitComment(this); return false;">
+            
+             
+              <input type="text" id="name" value="Your name" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"/>
+               <input type="text" id="email" value="Your email" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"/>
+             
+              
+              
+                   
+                    <input type="submit" value="Submit" />
+                   <br/>    <textarea cols="100"maxlength="255" type="text" id="text"  onfocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Enter Your Message Here...</textarea>
+                        <div id="warning1" style="display:none">Don`t forget to fill all required fields</div>
+                    <div id="warning2" style="display:none">You can post no more than one comment every 10 minutes (spam protection)</div>
+         
+        </form>
